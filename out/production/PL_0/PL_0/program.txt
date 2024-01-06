@@ -1,0 +1,16 @@
+PROGRAM example
+CONST max := 10;
+VAR count, sum;
+BEGIN
+    count := 1;
+    sum := 0;
+    WHILE count <= max DO
+    BEGIN
+        sum := sum + count;
+        count := count + 1;
+    END;
+    IF sum >= max THEN
+    BEGIN
+        sum := sum - max;
+    END;
+END
